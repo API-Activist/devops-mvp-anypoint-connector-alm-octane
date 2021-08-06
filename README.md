@@ -90,8 +90,6 @@ The MVP version of the ALM Octane connectors has 3 main operations for all entit
 - **Update** to modify existing entities 
 - **Get** to retrieve data for entities
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/02_operation_properties.PNG)
-
 If you need to enable deletion, you have to add it by extending this connector mvp template. The recommendation would be to leverage the postman collection pack to extend this connector to your needs.
 
 **MIME-Type**
@@ -103,6 +101,9 @@ Each operation has additional properties to be added:
 - workspace - Id of the workspace
 - Techpreview - true or false - If you want to use the technical preview resources, set this option to true
 - Clienttype - client type for accessing the ALM Octane data
+
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/02_operation_properties.PNG)
+
 
 Additionally you have to provide a payload for all **Add** and **Update** operations (see next section).
 ![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/03_json_meta_data.PNG)
