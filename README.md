@@ -68,7 +68,7 @@ After installation is successful, add the following dependency into your anypoin
 The current version of this connector is 0.1.9. Once added, save the pom.xml file and your Mule Palette gets updated and you should see the ALM Octane connector.
 
 ### Step 4 - Create ALM Octane Configuration
-Before you get started and consume the provided operations, make sure to configure the GitLab Connection within Anypoint Studio. 
+Before you get started and consume the provided operations, make sure to configure the ALM Octane Connection within Anypoint Studio. 
 - Protocol - http / https
 - Host
 - Port
@@ -77,7 +77,8 @@ Before you get started and consume the provided operations, make sure to configu
 
 [Learn how to obtain client_id and client_secret for ALM Octane](https://admhelp.microfocus.com/octane/en/15.1.90/Online/Content/AdminGuide/how_setup_APIaccess.htm)
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/02_operation_properties.PNG)
+
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/01_octane_config.PNG)
 
 Now you are all set to use the ALM Octane Operations.
 
@@ -88,6 +89,8 @@ The MVP version of the ALM Octane connectors has 3 main operations for all entit
 - **Add** to create a new entities
 - **Update** to modify existing entities 
 - **Get** to retrieve data for entities
+
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/02_operation_properties.PNG)
 
 If you need to enable deletion, you have to add it by extending this connector mvp template. The recommendation would be to leverage the postman collection pack to extend this connector to your needs.
 
