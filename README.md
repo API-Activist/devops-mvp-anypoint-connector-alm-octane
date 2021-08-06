@@ -4,7 +4,9 @@ This ALM Octane MVP connector is build as a template for the #MuleSoft #Communit
 Implementation content is focused on main resources of ALM Octane. 
 
 Use the ALM Octane REST API reference to extend this connector to your needs - [available here](https://admhelp.microfocus.com/octane/en/15.1.90/Online/Content/API/articles_API2.htm)
+
 Recommendation is to use the Postman collection pack to extend this collection to a huge variety of operations - [available here](https://documenter.getpostman.com/view/13698513/TVmLCdts)
+
 Watch the Tutorial Video for the Postman collection pack - [available here](https://youtu.be/qc_WnqgAzzo)
 
 ![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/Octane.png)
