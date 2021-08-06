@@ -7,7 +7,7 @@ Use the ALM Octane REST API reference to extend this connector to your needs - [
 Recommendation is to use the Postman collection pack to extend this collection to a huge variety of operations - [available here](https://documenter.getpostman.com/view/13698513/TVmLCdts)
 Watch the Tutorial Video for the Postman collection pack - [available here](https://youtu.be/qc_WnqgAzzo)
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/mvp-jenkins-connector.png)
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/Octane.png)
 
 ## Getting started
 This Anypoint Studio MVP (Minimum Viable Product) Connector for ALM Octane has been built for the MuleSoft Community as a template to reuse and if required further extend. 
@@ -33,7 +33,7 @@ The connector supports 21 operations in this MVP release with the focus on issue
 - Update stories
 - Update work Items
 
-
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/00_mule_palette.PNG)
 
 ## Installation of the MVP Connector for ALM Octane
 This section describes the installation process for this mvp connector in order to use in Anypoint Studio. 
@@ -51,7 +51,7 @@ This section describes the installation process for this mvp connector in order 
 - Perform "mvn install" 
 - Connector should be installed successfully
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/cmd%20mvn%20install.PNG)
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/02_mvn-install.PNG)
 
 ### Step 3 - Adding dependency in Anypoint Studio Project
 After installation is successful, add the following dependency into your anypoint project pom.xml:
@@ -65,8 +65,6 @@ After installation is successful, add the following dependency into your anypoin
 
 The current version of this connector is 0.1.9. Once added, save the pom.xml file and your Mule Palette gets updated and you should see the ALM Octane connector.
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/jenkins-mule-palette.PNG)
-
 ### Step 4 - Create ALM Octane Configuration
 Before you get started and consume the provided operations, make sure to configure the GitLab Connection within Anypoint Studio. 
 - Protocol - http / https
@@ -77,7 +75,7 @@ Before you get started and consume the provided operations, make sure to configu
 
 [Learn how to obtain client_id and client_secret for ALM Octane](https://admhelp.microfocus.com/octane/en/15.1.90/Online/Content/AdminGuide/how_setup_APIaccess.htm)
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/02_operation_properties.PNG)
 
 Now you are all set to use the ALM Octane Operations.
 
@@ -102,23 +100,77 @@ Each operation has additional properties to be added:
 - Clienttype - client type for accessing the ALM Octane data
 
 Additionally you have to provide a payload for all **Add** and **Update** operations (see next section).
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/03_json_meta_data.PNG)
 
 ### How to use the payload property
 As ALM Octane payloads have couple of fields, it is recommended to use the Transform Message component before. 
 
 When using a transform message component, make use of the example payloads provided for **new** and **update** operations in the meta-data-examples folder of this repository.
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
+![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/03_transform_data.PNG)
 
 ### Reponse of operations
-By default it is a json sent back as string. Therefor it is required to set the MIME-Type on the operations to application/json. 
+By default it is a json sent back as string. Therefore it is required to set the MIME-Type on the operations to application/json. 
 
-![Image of ALM Octane MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
-
+	{
+	
+			"total_count": 3,
+			"data": [{
+					"type": "defect",
+					"creation_time": "2016-10-27T10:35:46Z",
+					"parent": {
+							"type": "work_item_root",
+							"id": "1001"
+					},
+					"version_stamp": 9,
+					"description": "<html><body>\n<p>Emptying out items in cart takes way too long. It could take more than 45 seconds. </p> \n</body></html>",
+					"id": "1014",
+					"severity": {
+							"type": "list_node",
+							"id": "1005"
+					},
+					"name": "Emptying out items in cart takes way too long",
+					...
+			},
+			{
+					"type": "defect",
+					"creation_time": "2016-10-27T10:32:23Z",
+					"parent": {
+							"type": "feature",
+							"id": "1007"
+					},
+					"version_stamp": 8,
+					"description": "<html><body>\n<p>Shortcut key for deleting all items in cart does not work when there are more than 10 items in the cart.</p> \n</body></html>",
+					"id": "1012",
+					"severity": {
+							"type": "list_node",
+							"id": "1003"
+					},
+					"name": "Shortcut key for deleting all items in cart does not work.",
+					...
+			},
+			{
+					"type": "defect",
+					"creation_time": "2016-10-27T10:33:03Z",
+					"parent": {
+							"type": "feature",
+							"id": "1007"
+					},
+					"version_stamp": 9,
+					"description": "<html><body>\n<p>When adding one item to cart, it appears as if the item was added two times. In actuality, it is only added once. If the user refreshes the screen, it appears correctly. This only happens in Chrome.</p> \n</body></html>",
+					"id": "1013",
+					"severity": {
+							"type": "list_node",
+							"id": "1005"
+					},
+					"name": "When adding one item to cart, it appears as if the item was added two times.",
+					...
+			}],
+			"exceeds_total_count": false
+	}
 
 ## Flow Example with ALM Octane operations
-![Image of ALM Octane interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-gitlab/blob/master/pictures/Gitlab-jenkins-Jira.PNG)
+![Image of ALM Octane interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/keep-issues-in-sync-gitlab-lead-flow.PNG)
 
 	
 ## Video Tutorial
