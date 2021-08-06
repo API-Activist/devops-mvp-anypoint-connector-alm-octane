@@ -1,0 +1,26 @@
+{
+    "data":[
+        {
+            "name":"This is a defect",
+            "phase": {
+                "type":"phase",
+                "id": "phase.defect.opened"
+            },
+            "owner":{
+                "type":"workspace_user",
+                "id": "6001"
+            }
+        },
+        {
+            "name":"This is another defect",
+            "phase": {
+                "type":"phase",
+                "id": "phase.defect.new"
+            },
+            "owner":{
+                "type":"workspace_user",
+                "id": "6001"
+            }
+        }        
+    ]
+}

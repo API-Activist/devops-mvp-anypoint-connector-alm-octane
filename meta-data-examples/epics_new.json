@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "name": "Digitalization PoC",
+            "description": "This is the description for Digitalization PoC",
+            "epic_type": {
+                "type": "list_node",
+                "id": "list_node.epic_type.Architecture"
+            }
+       },
+        {
+            "name": "Digitalization PoC - Next Generation",
+            "description": "This is the description for Digitalization PoC - Next Generation",
+            "epic_type": {
+                "type": "list_node",
+                "id": "list_node.epic_type.Business"
+            }
+       }       
+    ]
+}

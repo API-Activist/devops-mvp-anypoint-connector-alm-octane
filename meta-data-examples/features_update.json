@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "id": "128010",
+            "name": "Virtual Box",
+            "description": "changed description from 'This is the virtual box feature'",
+            "priority": {
+                "type": "list_node",
+                "id": "list_node.priority.medium"
+            },
+            "parent": {
+                "type": "epic",
+                "id": {{epic_id}}
+            }
+       },
+        {
+            "id": "128011",
+            "name": "Virtual Chat renamed",
+            "description": "This is the virtual Chat feature",
+            "priority": {
+                "type": "list_node",
+                "id": "list_node.priority.high"
+            },
+            "parent": {
+                "type": "epic",
+                "id": {{epic_id}}
+            }
+       }       
+    ]
+}

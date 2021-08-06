@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "name":"Design",
+            "story": {
+                "type": "story",
+                "id": "6082"
+            },
+            "description": "This is a new tasks for design"
+        },
+        {
+            "name":"Develop",
+            "story": {
+                "type": "defect",
+                "id": "7081"
+            },
+            "description": "This is a new tasks for develop"
+        },
+        {
+            "name":"Quality",
+            "story": {
+                "type": "quality_story",
+                "id": "61001"
+            },
+            "description": "This is a new tasks for quality"
+        }        
+    ]
+}

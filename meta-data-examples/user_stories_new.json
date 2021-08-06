@@ -1,0 +1,12 @@
+{ "data" : 
+    [
+        {
+            "name":"As an user i want to change my password", 
+            "description" : "Change password for current user is possible through user profile."
+        },
+        {
+            "name":"As an user i want to change my profile picture", 
+            "description" : "Change profile picture for current user is possible through user profile."
+        }
+    ]
+}

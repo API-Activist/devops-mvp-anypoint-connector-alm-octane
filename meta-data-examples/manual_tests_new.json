@@ -1,0 +1,46 @@
+{
+    "data":[
+        {
+            "name": "Login to web application",
+            "description": "This is a web application test regression",
+            "test_type": {
+                "data": [
+                {
+                    "type": "list_node",
+                    "id": "list_node.test_type.end_to_end"
+                }
+                ]
+            },
+            "product_areas" : {
+                "data":[
+                {
+                    "type": "product_area",
+                    "id": 7011        
+                }
+                ]
+            }
+
+        },
+        {
+            "name": "Login to web application regression",
+            "description": "This is a web application test",
+            "test_type": {
+                "data": [
+                {
+                    "type": "list_node",
+                    "id": "list_node.test_type.regression"
+                }
+                ]
+            },
+            "product_areas" : {
+                "data":[
+                {
+                    "type": "product_area",
+                    "id": 7011        
+                }
+                ]
+            }
+        }
+
+    ]
+}
