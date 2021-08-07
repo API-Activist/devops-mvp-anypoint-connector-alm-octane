@@ -176,7 +176,7 @@ By default it is a json sent back as string. Therefore it is required to set the
 	}
 
 ## Flow Example with ALM Octane operations
-![Image of ALM Octane interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/keep-issues-in-sync-gitlab-lead-flow.PNG)
+![Image of ALM Octane interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/keep-issues-in-sync-octane-lead-flow.PNG)
 
 	
 ## Video Tutorial
