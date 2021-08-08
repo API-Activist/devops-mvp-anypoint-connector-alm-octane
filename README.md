@@ -179,10 +179,6 @@ By default it is a json sent back as string. Therefore it is required to set the
 ![Image of ALM Octane interaction](https://github.com/API-Activist/devops-mvp-anypoint-connector-alm-octane/blob/master/pictures/keep-issues-in-sync-octane-lead-flow-fixed.PNG)
 
 	
-## Video Tutorial
-Link to the video tutorial: -to be provided soon-
-
-
 ## Caution
 This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with ALM Octane SaaS. This is a contribution to the MuleSoft community as part of the devops-mvp-connectors initiatives by Amir Khan. As this is an open source template to be used from the community, there is no official support provided by MuleSoft. Also if operations are missing, please use the ALM Octane API references to implement using the examples provided within this template.
 	
