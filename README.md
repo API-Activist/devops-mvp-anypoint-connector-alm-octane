@@ -180,7 +180,7 @@ By default it is a json sent back as string. Therefore it is required to set the
 
 	
 ## Caution
-This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with ALM Octane SaaS. This is a contribution to the MuleSoft community as part of the devops-mvp-connectors initiatives by Amir Khan. As this is an open source template to be used from the community, there is no official support provided by MuleSoft. Also if operations are missing, please use the ALM Octane API references to implement using the examples provided within this template.
+This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with ALM Octane SaaS. This is a contribution to the MuleSoft community as part of the devops-mvp-connectors initiatives by [Amir Khan](https://www.linkedin.com/in/amir-khan-ak). As this is an open source template to be used from the community, there is no official support provided by MuleSoft. Also if operations are missing, please use the ALM Octane API references to implement using the examples provided within this template.
 	
 ALM Octane API Reference: [available here](https://admhelp.microfocus.com/octane/en/15.1.90/Online/Content/API/articles_API2.htm)
 	
